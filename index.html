@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScamShield | Kinetic Bastion V4.2</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="container">
+        <div class="logo">SCAM<span>SHIELD</span></div>
+        <ul class="nav-links">
+            <li><a href="#" class="active">HOME</a></li>
+            <li><a href="#">ANALYSIS</a></li>
+            <li><a href="#">LEARN</a></li>
+            <li><a href="#">REPORT</a></li>
+        </ul>
+        <button class="btn-outline">SCAN NOW</button>
+    </nav>
+
+    <header class="hero container">
+        <p class="protocol-tag">PROTOCOL ACTIVE: KINETIC BASTION V4.2</p>
+        <h1>Check Before <br><span class="cyan-text">You Click.</span></h1>
+        
+        <div class="search-box">
+            <i class="fas fa-link"></i>
+            <input type="text" id="scanInput" placeholder="Paste suspicious link or message here...">
+            <button onclick="startScan()" class="btn-cyan">SCAN NOW</button>
+        </div>
+    </header>
+
+    <section class="analysis-grid container">
+        <div class="card neural-card">
+            <div class="card-content">
+                <h2>Neural Defense Grid</h2>
+                <p>Our Bastion Protocol analyzes metadata clusters in real-time, identifying malicious intent before it reaches your device.</p>
+            </div>
+            <div class="cyber-shield-visual floating">
+                <div class="outer-ring"></div>
+                <div class="inner-shield">
+                    <i class="fas fa-shield-halved"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="stats-column">
+            <div class="card stat-card">
+                <small>TOTAL MITIGATION</small>
+                <h3>1M +</h3>
+                <p>Verified scams neutralized in the last 24 hours.</p>
+            </div>
+            <div class="card graph-card">
+                <small>ACTIVE THREATS <span class="dot pulse"></span></small>
+                <div class="bar-chart">
+                    <div class="bar" style="height: 40%"></div>
+                    <div class="bar" style="height: 70%"></div>
+                    <div class="bar" style="height: 50%"></div>
+                    <div class="bar" style="height: 90%"></div>
+                </div>
+                <p>Scanning 4,209 incoming protocols/sec</p>
+            </div>
+        </div>
+    </section>
+
+    <div id="scanModal" class="modal hidden">
+        <div class="modal-content glass">
+            <h2 id="statusText">INITIALIZING...</h2>
+            
+            <div id="scannerAnimation" class="scanner-visual">
+                <div class="scanner-bar"></div>
+            </div>
+
+            <div id="resultOutput" class="hidden">
+                <div class="result-details">
+                    <h3 id="riskScoreText">0%</h3>
+                    <p id="riskLevelLabel">ANALYZING</p>
+                </div>
+                <button onclick="closeModal()" class="btn-outline" style="margin-top: 30px;">DISMISS</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <div class="logo">SCAM<span>SHIELD</span></div>
+                <p class="footer-tagline">Advanced AI protection for the digital frontier. Built for clinical precision.</p>
+            </div>
+            
+            <div class="footer-links-group">
+                <div class="footer-col">
+                    <h4>LEGAL</h4>
+                    <a href="#">PRIVACY VAULT</a>
+                    <a href="#">TERMS</a>
+                </div>
+                <div class="footer-col">
+                    <h4>RESOURCES</h4>
+                    <a href="#">THREAT API</a>
+                    <a href="#">LEARN</a>
+                </div>
+                <div class="footer-col">
+                    <h4>CONTACT</h4>
+                    <a href="mailto:hiruna@axora.design">hiruna@axora.design</a>
+                    <p>Kurunegala, Sri Lanka</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom container">
+            <p class="copyright">© 2026 SCAMSHIELD. SECURED BY KINETIC BASTION PROTOCOL.</p>
+            <p class="creator">Created by - <span>Hiruna Basnayake</span></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
